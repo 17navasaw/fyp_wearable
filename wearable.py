@@ -11,6 +11,8 @@ from constants import *
 import utils
 from joblib import load
 
+import numpy as np
+
 imu = LSM6DS33()
 imu.enableLSM()
 
@@ -84,6 +86,6 @@ while True:
       features_window = feature_extract(window)
       predicted_label = clf.predict(features_window)[0]
       print("Predicted label: {}".format(predicted_label))
-      window = []
+      window = window[1:]
    
    sleep(0.01)
