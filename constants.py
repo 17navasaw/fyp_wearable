@@ -34,6 +34,7 @@ LEFT_ACCZ_INDEX = 3
 RIGHT_ACCX_INDEX = 4
 RIGHT_ACCY_INDEX = 5
 RIGHT_ACCZ_INDEX = 6
+FOG_INDEX = 7
 
 # Thresholds for Freezing Index in Hz
 LB_LOW = 0.5 # Lower bound of locomotion band index
